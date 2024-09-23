@@ -6,6 +6,8 @@
   align-items: center;
   justify-content: center;
   background-color: #fafafa;
+  width: 650px;
+  margin-bottom: 48px;
 }
 
 .textName {
@@ -24,6 +26,7 @@
 .image {
   border-radius: 50%;
   width: 300px;
+  text-align: center;
   background-color: #2c2b2b;
 }
 

@@ -1,33 +1,35 @@
-import clsx from 'clsx';
+// import clsx from 'clsx';
 
-import style from './Profile.module.css';
+import styles from './Profile.module.css';
 
-import React from 'react';
+// import React from 'react';
 
 const Profile = ({ username, tag, location, avatar, stats }) => {
-  // const { username, tag, location, avatar, stats } = props;
-
   return (
-    <div className={style.profileWrapper}>
-      <div className={style.avatarWrapper}>
-        <img className={style.image} src={avatar} alt={'avatar' + username} />
-        <p className={style.textName}>{username}</p>
-        <p className={style.textLast}>{tag}</p>
-        <p className={style.textLast}>{location}</p>
+    <div className={styles.profileWrapper}>
+      <div className={styles.avatarWrapper}>
+        <img
+          className={styles.image}
+          src={avatar}
+          alt={'avatar: ' + username}
+        />
+        <p className={styles.textName}>{username}</p>
+        <p className={styles.textLast}>{tag}</p>
+        <p className={styles.textLast}>{location}</p>
       </div>
 
-      <ul className={style.stats}>
-        <li className={style.statsItemFirst}>
+      <ul className={styles.stats}>
+        <li className={styles.statsItemFirst}>
           <span>Followers</span>
-          <span className={style.statsResault}>{stats.followers}</span>
+          <span className={styles.statsResault}>{stats.followers}</span>
         </li>
-        <li className={style.statsItem}>
+        <li className={styles.statsItem}>
           <span>Views</span>
-          <span className={style.statsResault}>{stats.views}</span>
+          <span className={styles.statsResault}>{stats.views}</span>
         </li>
-        <li className={style.statsItemLast}>
+        <li className={styles.statsItemLast}>
           <span>Likes</span>
-          <span className={style.statsResault}>{stats.likes}</span>
+          <span className={styles.statsResault}>{stats.likes}</span>
         </li>
       </ul>
     </div>
